@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body class="intro-page">
+    <div class="card">
+      <h2>Instructions</h2>
+
+      <p>🔴 Red markers = complete tasks and mark them as done.</p>
+      <p>🔵 Blue markers = optional info about Ljubljana.</p>
+      <br>
+
+      <h4>My advice</h4>
+      <p>📍 Enable GPS and try to reach 100% progress!</p>
+      <p> Take pictures with an iPhone, since it has a better camera.</p>
+
+      <button class="primary-btn" onclick="next()">Next</button>
+    </div>
+    <script>
+      function next() {
+        window.location.href = "map.html";
+      }
+    </script>
+  </body>
+</html>
