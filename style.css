@@ -264,6 +264,7 @@ button {
 .action-btn {
   width: 100%;
   padding: 14px;
+  margin-top: 0px;
 
   border: none;
   border-radius: 999px;
