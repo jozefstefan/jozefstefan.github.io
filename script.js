@@ -216,7 +216,7 @@ function openCard(loc) {
 
   let content = `
     <img src="${loc.image}">
-    <center><h2>${loc.name}</h2></center>
+    <center><h3>${loc.name}</h3></center>
     <p>${loc.description}</p>
   `;
 
