@@ -250,7 +250,10 @@ document.getElementById("cardOverlay").addEventListener("click", (e) => {
 // Toggle Done
 function toggleDone(id) {
   if (doneLocations.includes(id)) {
-    doneLocations = doneLocations.filter((i) => i !== id);
+    doneLocations = doneLocations.filter(i => i !== id);
+
+    // Reset completion popup
+    localStorage.removeItem("completedShown");
   } else {
     doneLocations.push(id);
   }
@@ -276,7 +279,7 @@ function updateMarkers() {
 
 // Update progress
 function updateProgress() {
-  const taskLocations = locations.filter((l) => l.type === "task");
+  const taskLocations = locations.filter(l => l.type === "task");
   const percent = (doneLocations.length / taskLocations.length) * 100;
 
   const bar = document.getElementById("progressBar");
@@ -285,14 +288,9 @@ function updateProgress() {
   bar.style.width = percent + "%";
   text.innerText = Math.round(percent) + "%";
 
-  bar.classList.remove("progress-low", "progress-mid", "progress-high");
-
-  if (percent < 40) {
-    bar.classList.add("progress-low");
-  } else if (percent < 80) {
-    bar.classList.add("progress-mid");
-  } else {
-    bar.classList.add("progress-high");
+  // 🎉 Show completion popup
+  if (percent === 100) {
+    showCompletion();
   }
 }
 
@@ -312,4 +310,16 @@ function enableGPS() {
   localStorage.setItem("gpsEnabled", "true");
 
   document.getElementById("gpsModal").style.display = "none";
+}
+
+function showCompletion() {
+  // Prevent showing multiple times
+  if (localStorage.getItem("completedShown")) return;
+
+  document.getElementById("completionModal").classList.remove("hidden");
+  localStorage.setItem("completedShown", "true");
+}
+
+function closeCompletion() {
+  document.getElementById("completionModal").classList.add("hidden");
 }
