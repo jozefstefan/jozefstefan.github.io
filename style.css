@@ -1,0 +1,349 @@
+/* Global font */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Background */
+.intro-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #44c076, #0DA54A);
+}
+
+/* Card container */
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+
+  width: 85%;
+  max-width: 400px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Titles */
+.card h1,
+.card h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card p {
+  color: #555;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Modern button */
+.primary-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: white;
+  background: linear-gradient(135deg, #0DA54A, #44c076);
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tap effect */
+.primary-btn:active {
+  transform: scale(0.97);
+}
+
+/* Hover (desktop) */
+.primary-btn:hover {
+  filter: brightness(1.05);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+#progressContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
+  height: 34px;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.15),
+    inset 0 1px 2px rgba(255,255,255,0.3);
+
+  z-index: 1000;
+}
+
+/* Progress fill */
+#progressBar {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* subtle glow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+  background: linear-gradient(270deg, #0DA54A, #44c076, #0DA54A);
+  background-size: 400% 400%;
+  animation: gradientMove 3s ease infinite;
+
+}
+
+/* Centered text */
+#progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+
+  pointer-events: none;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* marker styles */
+.done-marker {
+  opacity: 0.4;
+}
+
+.info-marker {
+  stroke: blue;
+  fill: lightblue;
+}
+
+#cardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.4);
+  z-index: 2000;
+}
+
+/* 👇 IMPORTANT: prevent blocking when hidden */
+#cardOverlay.hidden {
+  display: none;
+}
+
+/* Hidden state */
+.hidden {
+  display: none !important;
+}
+
+/* Card (bottom sheet style) */
+#cardContent {
+  width: 100%;
+  max-height: 90%;
+  background: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease;
+
+  position: relative; /* 👈 IMPORTANT */
+}
+
+#cardBody {
+  margin-top: 30px;
+}
+
+/* Close button */
+#closeCard {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+
+  display: flex;              /* 👈 key */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+
+  font-size: 18px;
+  line-height: 1;             /* 👈 prevents vertical shift */
+  padding: 0;                 /* 👈 remove default padding */
+
+  cursor: pointer;
+}
+
+/* Image styling */
+#cardBody img {
+  width: 100%;          /* never exceed card width */
+  max-height: 250px;    /* 👈 limit height */
+  object-fit: cover;    /* crop nicely instead of stretching */
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.action-btn {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  background: #0DA54A;   /* default (Google blue) */
+  color: white;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Hover / tap effect */
+.action-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* DONE state */
+.action-btn.done {
+  background: #373737;  /* Google green */
+}
+
+/* Optional subtle hover (desktop) */
+.action-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* Fullscreen overlay */
+#gpsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 3000;
+}
+
+/* Card */
+.gps-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+
+  width: 80%;
+  max-width: 320px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Button */
+.gps-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #0DA54A;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
