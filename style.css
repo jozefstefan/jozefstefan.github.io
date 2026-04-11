@@ -361,3 +361,71 @@ html, body {
 body {
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+/* Overlay */
+#completionModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 4000;
+}
+
+/* Hidden */
+#completionModal.hidden {
+  display: none;
+}
+
+/* Card */
+.completion-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+
+  width: 80%;
+  max-width: 320px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  animation: popIn 0.4s ease;
+}
+
+/* Button */
+.completion-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #34a853;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
