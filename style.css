@@ -217,14 +217,10 @@ button {
   position: relative; /* 👈 IMPORTANT */
 }
 
-#cardBody {
-  margin-top: 30px;
-}
-
 /* Close button */
 #closeCard {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 15px;
 
   width: 36px;
@@ -232,12 +228,13 @@ button {
 
   border: none;
   border-radius: 50%;
-  background: rgba(0,0,0,0.1);
+  background: rgba(255, 74, 74, 0.95);
 
   display: flex;              /* 👈 key */
   align-items: center;        /* vertical center */
   justify-content: center;    /* horizontal center */
 
+  color: white;
   font-size: 18px;
   line-height: 1;             /* 👈 prevents vertical shift */
   padding: 0;                 /* 👈 remove default padding */
@@ -248,7 +245,7 @@ button {
 /* Image styling */
 #cardBody img {
   width: 100%;          /* never exceed card width */
-  max-height: 250px;    /* 👈 limit height */
+  max-height: 200px;    /* 👈 limit height */
   object-fit: cover;    /* crop nicely instead of stretching */
   border-radius: 12px;
   margin-top: 10px;
