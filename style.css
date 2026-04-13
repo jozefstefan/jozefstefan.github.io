@@ -50,7 +50,7 @@ body {
   }
 }
 
-.card p {
+#cardBody p {
   color: #555;
   margin: 8px 0;
   font-size: 15px;
@@ -245,7 +245,7 @@ button {
 /* Image styling */
 #cardBody img {
   width: 100%;          /* never exceed card width */
-  max-height: 200px;    /* 👈 limit height */
+  max-height: 180px;    /* 👈 limit height */
   object-fit: cover;    /* crop nicely instead of stretching */
   border-radius: 12px;
   margin-top: 10px;
