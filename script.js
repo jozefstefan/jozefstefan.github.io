@@ -132,7 +132,7 @@ const locations = [
     color: "red",
     coords: [46.05044275417689, 14.50031045767263],
     radius: 70,
-    description: "Republic Square is the giant concrete heart of Slovenian politics, designed in a <i>Brutalist</i> style that looks like a 1970s sci-fi movie set. 🛸 This is the exact location where Slovenia’s independence was officially declared in 1991! The square is intentionally massive because it was designed for huge public gatherings and parades back in the Yugoslav era.<br><br><b>The Mission:</b><br>Since this square looks like a futuristic movie set from the 70s, you’re going to film a <i>Slovenian Spy Thriller</i> poster. 🎬 You need to create the <i>Triangular Tower</i> pose. 📐 Split the group in two and have each half lean toward the center to form a triangle with your bodies, mimicking the shape of the two massive towers behind you. 🤫",
+    description: "Republic Square is the giant concrete heart of Slovenian politics, designed in a <i>Brutalist</i> style that looks like a 1970s sci-fi movie set. 🛸 This is the exact location where Slovenia’s independence was officially declared in 1991! 🇸🇮<br><br><b>The Mission:</b><br>Since this square looks like a futuristic movie set from the 70s, you’re going to film a <i>Slovenian Spy Thriller</i> poster. 🎬 You need to create the <i>Triangular Tower</i> pose. 📐 Split the group in two and have each half lean toward the center to form a triangle with your bodies, mimicking the shape of the two massive towers behind you.",
     image: "img/lj-11.jpg",
   },
   {
@@ -140,7 +140,7 @@ const locations = [
     type: "info",
     name: "National Assembly 🇸🇮",
     coords: [46.05133264836481, 14.501145418687917],
-    description: "The National Assembly is where the political magic (and drama) happens in Slovenia. 🏛️ Completed in 1959, the building is a classic example of <i>modernist</i> architecture. It features a massive bronze portal covered in sculptures of naked figures that look like they’ve been hitting the gym 24/7. 💪 These statues represent <i>the working people</i>—from farmers to scientists—living their best lives while holding up the weight of the nation. 🚜🔬<br><br>Inside, the halls are lined with rare Slovenian marble and a giant mural that tells the entire history of the Slovenian people, from the early Slavs to the modern era. 🎨",
+    description: "The National Assembly is where the political magic (and drama) happens in Slovenia. 🏛️ The building features a massive bronze portal covered in sculptures of naked figures that look like they’ve been hitting the gym 24/7. 💪 These statues represent <i>the working people</i>—from farmers to scientists—living their best lives while holding up the weight of the nation. 🚜🔬<br><br>Inside, the halls are lined with rare Slovenian marble and a giant mural that tells the entire history of the Slovenian people, from the early Slavs to the modern era. 🎨",
     image: "img/lj-16.jpg",
   },
   {
@@ -148,7 +148,7 @@ const locations = [
     type: "info",
     name: "Metelkova Mesto 🎨",
     coords: [46.05695693207856, 14.516915935165047],
-    description: "Metelkova mesto is the artistic and alternative soul of Ljubljana, born from the ruins of former Yugoslav military barracks. 🏚️ In 1993, a group of activists occupied the space to save it from demolition, and today it’s one of the most successful urban squats in Europe! ✊ Every inch is covered in wild graffiti, mosaics, and sculptures that look like they belong in a surrealist dream. 🎭<br><br>By day, it's a quiet gallery of street art; by night, it transforms into a legendary nightlife hub with bars and clubs where the party never seems to end. 🌙🍻",
+    description: "Metelkova mesto is the artistic and alternative soul of Ljubljana, born from the ruins of former barracks. 🏚️ In 1993, a group of activists occupied the space to save it from demolition, and today it’s one of the most successful urban squats in Europe! ✊ Every inch is covered in wild graffiti, mosaics, and sculptures that look like they belong in a surrealist dream. 🎭<br><br>By day, it's a quiet gallery of street art; by night, it transforms into a legendary nightlife hub with bars and clubs where the party never seems to end. 🌙🍻",
     image: "img/lj-17.jpg",
   },
   {
@@ -156,7 +156,7 @@ const locations = [
     type: "info",
     name: "The Roman Wall 🧱",
     coords: [46.04567034262621, 14.498597105707665],
-    description: "The Roman Wall in the Mirje district is a 2,000-year-old reminder that Ljubljana used to be a Roman city called Emona. 🏛️ This massive stone structure once marked the southern boundary of the Empire's civilization, protecting its citizens from the <i>barbarians</i> outside. 🛡️<br><br>In the 1930s, the famous architect Jože Plečnik added his own creative touch by building a stone pyramid and an arched gateway right into the ancient ruins. 📐 It’s the perfect place to sit on a bench and imagine Roman soldiers marching past while you’re actually just steps away from a trendy modern neighborhood. ⚔️🌿",
+    description: "The Roman Wall is a 2,000-year-old reminder that Ljubljana used to be a Roman city called Emona. 🏛️ This massive stone structure once marked the southern boundary of the Empire's civilization, protecting its citizens from the <i>barbarians</i> outside. 🛡️<br><br>In the 1930s, the famous architect Jože Plečnik added his own creative touch by building a stone pyramid and an arched gateway right into the ancient ruins. 📐",
     image: "img/lj-18.jpg",
   },
   {
@@ -164,7 +164,7 @@ const locations = [
     type: "info",
     name: "Tivoli Park 🌳",
     coords: [46.05388734283935, 14.496574058632673],
-    description: "Tivoli Park is the massive, green backyard of Ljubljana, stretching right into the city center. 🌲 It was designed in 1813 when the French were in town, which is why it has that elegant, Parisian garden vibe with grand promenades and fountains. ⛲ It’s the ultimate spot for a siesta in the grass, a jog through the forest trails, or a visit to the Jakopič Promenade to see the latest outdoor photography exhibition. 📸<br><br>Whether you’re looking for a quiet picnic spot or a place to escape the summer heat under giant oak trees, Tivoli is the place where the city goes to breathe. 🧘‍♂️🍃",
+    description: "Tivoli Park is the massive, green backyard of Ljubljana, stretching right into the city center. 🌲 It was designed in 1813 when the French were in town, which is why it has that elegant, Parisian garden vibe with grand promenades and fountains. ⛲<br><br>Whether you’re looking for a quiet picnic spot or a place to escape the summer heat under giant oak trees, Tivoli is the place where the city goes to breathe. 🧘‍♂️🍃",
     image: "img/lj-19.jpg",
   },
   {
@@ -172,7 +172,7 @@ const locations = [
     type: "info",
     name: "The New Train Station 🏗️",
     coords: [46.058786669014786, 14.512827135802247],
-    description: "The construction of the new EmonikaClick to open side panel for more information hub is the biggest makeover Ljubljana has seen in decades, turning the old railway area into a futuristic gateway for the city. 🚆 Right now, it’s a giant landscape of cranes and excavators as they build a state-of-the-art passenger terminal, shopping centers, and offices. 🛠️<br><br>Historically, the railway was what connected Ljubljana to the world in the 1840s, and this massive project is meant to bring that connection into the 21st century. 🏗️ It’s a work in progress, but soon it will be a sleek, modern hub that makes arriving in Slovenia feel like stepping into the future! 🚉✨",
+    description: "The construction of the new Emonika hub is the biggest makeover Ljubljana has seen in decades, turning the old railway area into a futuristic gateway for the city. 🚆 Right now, it’s a giant landscape of cranes and excavators as they build a state-of-the-art passenger terminal, shopping centers, and offices. 🛠️<br><br>Historically, the railway was what connected Ljubljana to the world in the 1840s, and this massive project is meant to bring that connection into the 21st century. 🏗️ It’s a work in progress, but soon it will be a sleek, modern hub that makes arriving in Slovenia feel like stepping into the future! 🚉✨",
     image: "img/lj-20.jpg",
   },
 ];
